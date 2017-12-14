@@ -18,7 +18,7 @@
   fragment Viewer on User {
     # Initially, fetch the first 10 repositories. We'll show a "load more"
     # button to demostrate GraphQL connection cursors.
-    repositories(first: 10) {
+    repositories(last: 10) {
       # The only data we're using directly in this template is the total number
       # of repositories. Also note that its camelcase here.
       totalCount
